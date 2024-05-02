@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Async JS SetTimeOut</title>
+    </head>
+    <body>
+        <h1>Aysnc calls using SetTimeOut function in JS</h1>
+        <p id="demo"></p>
+
+        <script>
+            setTimeout(myfunction,3000);
+            function myfunction(){
+                document.getElementById("demo").innerHTML=200;
+            }
+        </script>
+    </body>
+</html>
+<!--
+output:
+Aysnc calls using SetTimeOut function in JS
+200
+
+-->

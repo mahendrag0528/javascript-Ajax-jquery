@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>call back in js</title>
+    </head>
+    <body>
+
+        <h1>JavaScript Functions</h1>
+<h2>Callback Functions</h2>
+
+<p>The result of the calculation is:</p>
+<p id="display"></p>
+
+        <script>
+            function mycalculator(num1,num2,mydisplay){
+                let sum=num1+num2;
+                mydisplay(sum);   
+            } 
+            function mydisplay(num){
+                document.getElementById("display").innerHTML=num;
+            }
+            mycalculator(5,5,mydisplay);
+        </script>
+    </body>
+</html>
+
+<!--
+    output:
+    
+    JavaScript Functions
+Callback Functions
+The result of the calculation is:
+
+10
+-->
