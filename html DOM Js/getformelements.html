@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<p>Finding HTML Elements Using <b>document.forms</b>.</p>
+
+<form id="frm1">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>These are the values of each element in the form:</p>
+
+<p id="demo"></p>
+
+<p>These are the names of each element in the form:</p>
+
+<p id="demo1"></p>
+
+<script>
+const x = document.forms["frm1"];
+//this is getting form values
+
+let text1 = "";
+for (let i = 0; i < x.length ;i++) {
+  text1 += x.elements[i].value + "<br>";
+}
+document.getElementById("demo").innerHTML = text1;
+
+//this is getting form name
+ 
+let text = "";
+for (let i = 0; i < x.length ;i++) {
+  text += x.elements[i].name + "<br>";
+}
+document.getElementById("demo1").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+<!--
+
+    output:
+
+    JavaScript HTML DOM
+Finding HTML Elements Using document.forms.
+
+First name: 
+Donald
+
+Last name: 
+Duck
+
+
+These are the values of each element in the form:
+
+Donald
+Duck
+Submit
+
+These are the names of each element in the form:
+
+fname
+lname
+
+-->

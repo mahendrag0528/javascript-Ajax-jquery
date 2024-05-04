@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dom Node operations</title>
+    </head>
+    <body>
+        <div id="divs">
+            <p id="f">hello</p>
+            <p>hii</p>
+        </div>
+        <script>
+            let x=document.createElement("p");
+            let y=document.createTextNode("this is first");
+            x.append(y);
+            let z=document.getElementById("divs");
+            let s=document.getElementById("f");
+            z.insertBefore(x,s);
+
+            z.removeChild(x);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dom on forms</title>
+    </head>
+    <body>
+        <h1>Registration form validate by required keyword</h1>
+        <div>
+            <form name="myform" action="#" onsubmit="return validate()" method="post">
+                name: <input type="text" name="fname" required>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <!-- DOM form access here... -->
+<!-- 
+<script>
+    function validate(){
+        let x=document.forms["myform"]["fname"].value;
+        if(x==""){
+            alert("name should not be empty");
+            return false;
+        }
+    }
+</script> -->
+
+    </body>
+</html>

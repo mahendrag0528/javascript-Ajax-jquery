@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>On click</title>
+    </head>
+    <body>
+        <button type="button" id="click" onclick="change()">click me!</button>
+
+        <script>
+            function change(){
+                let x=document.getElementById("click");
+                x.style.color="red";
+                x.innerHTML="clicked";
+            }
+        </script>
+    </body>
+</html>

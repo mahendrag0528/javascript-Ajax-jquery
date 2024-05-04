@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>get html Element in differnt approches</title>
+    </head>
+    <body>
+        <p id="demo">This is get by id</p>
+        <p>this by tag name</p>
+        <p class="hello">this by class name</p>
+        <p id="output"></p>
+        <script>
+            const x=document.getElementById("demo");
+            const y=document.getElementsByTagName("p");
+            const z=document.getElementsByClassName("hello");
+            const r=document.querySelectorAll("p.hello");
+            const ans=x.innerHTML+"<br>"+y[1].innerHTML+"<br>"+z[0].innerHTML;
+            document.getElementById("output").innerHTML=ans;
+        </script>
+    </body>
+</html>
+
+<!--
+
+    return type is list of values when getElement by tagName, selectQueryall and classname..
+-->
