@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <p>this the paragraph</p>
+        <p id="id">this is id paragraph</p>
+        <p class="hh">this is class paragraph</p>
+
+        <script>
+            $(document).ready(function(){
+                $("p").click(function(){$(this).hide()});
+                $("#id").click(function(){$(this).hide()});
+                $(".hh").click(function(){$(this).hide()});                
+            });
+        </script>
+    </body>
+</html>

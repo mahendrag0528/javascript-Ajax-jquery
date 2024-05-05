@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery get</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <p id="redh"><input type="button" id="butto" value="hii"></p>
+        <p id="tess">this is text</p>
+
+        <script>
+            $(document).ready(function(){
+                document.write($("#butto").val()+"<br>"+
+                $("#tess").text());
+                alert($("#redh").html());
+            });
+        </script>
+
+    </body>
+</html>
