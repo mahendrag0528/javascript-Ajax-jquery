@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+    </head>
+    <body>
+        <h1>Hello World!..</h1>
+        <button id="get">click</button>
+        <script>
+              document.getElementById("get").addEventListener('click',
+ function loaduser(){
+   let xhttp=new XMLHttpRequest();
+
+let data={
+        "name": "malli",
+        "job": "IT"
+    }
+
+   xhttp.onload=function(){
+    if(xhttp.status==201){
+        document.write(this.responseText);
+       
+        document.write(this.getAllResponseHeaders());
+    }
+    else{
+        document.write(this.status);
+    }
+   }
+
+   xhttp.open('POST','https://reqres.in/api/users',true);
+   xhttp.send(data);
+
+});
+        </script>
+    </body>
+</html>

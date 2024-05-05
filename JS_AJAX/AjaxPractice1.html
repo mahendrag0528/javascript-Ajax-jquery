@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+    </head>
+    <body>
+        <h1>Hello World!..</h1>
+        <button id="get">click</button>
+        <script>
+              document.getElementById("get").addEventListener('click',
+ function loaduser(){
+    var x="hello world";
+    var xhr=new XMLHttpRequest();
+    xhr.onload=function(){
+        if(this.status==200){
+            document.write((this.responseText));
+        }
+    }
+    xhr.open('GET','https://api.github.com/users',true);
+    xhr.setRequestHeader('Content-type','application/PLAIN_TEXT');
+    xhr.send(); 
+});
+        </script>
+    </body>
+</html>
